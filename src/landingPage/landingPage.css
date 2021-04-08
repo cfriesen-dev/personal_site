@@ -1,0 +1,16 @@
+/****************/
+/* Landing Page */
+/****************/
+
+#title-banner h1 {
+	font-size: 80px;
+	margin: 15px;
+}
+
+#title-banner h4 {
+	color: #aaa;
+}
+
+#title-banner ul.nav {
+	margin: 50px auto 50px auto;
+}
