@@ -22,7 +22,7 @@ export default class PhishingResults extends React.Component {
         const score = this.props.questionSet.length - this.props.incorrect.length;
 
         return (
-            <div id="phishing-results">
+            <div className="column-container">
                 <UrlReview
                     expanded={ this.state.urlReviewExpanded } />
                 <div className="column left-column">

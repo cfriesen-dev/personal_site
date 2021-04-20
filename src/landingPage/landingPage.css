@@ -2,15 +2,27 @@
 /* Landing Page */
 /****************/
 
-#title-banner h1 {
+#title {
+	margin-top: 120px;
+}
+
+#title h1 {
 	font-size: 80px;
 	margin: 15px;
 }
 
-#title-banner h4 {
+#title h4 {
 	color: #aaa;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
-#title-banner ul.nav {
+#title ul.nav {
 	margin: 50px auto 50px auto;
+}
+
+a {
+	text-decoration: none;
+	color: #98c9a3;
 }

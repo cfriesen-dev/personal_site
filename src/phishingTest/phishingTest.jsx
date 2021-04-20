@@ -62,7 +62,7 @@ export default class PhishingTest extends React.Component {
 	      <div>
 	        <NavMenu />
 	        <div id='phishingTest-container'>
-				{resultDisplayed ?
+				{ resultDisplayed ?
 					<PhishingResults
 						incorrect={ this.state.incorrect }
 						questionSet={ this.state.questionSet }

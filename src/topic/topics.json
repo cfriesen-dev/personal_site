@@ -1,0 +1,16 @@
+{
+  "topics": [
+    {
+      "name": "Fingerprinting",
+      "documentName": "Literature Review",
+      "documentLocation": "",
+      "documentAbstract": "Browser fingerprinting is an area coming to prominence and the research stands divided between those who are looking to leverage it for security applications and those looking to defend the privacy that it threatens. This review is an investigation into the compatibility of research from both sides functioning together to support first party sites while defending against third party tracking. Security research will be discussed and proposed fingerprinting countermeasures analyzed as to their effectiveness in functioning alongside. Future directions in research are proposed in order to bridge the divide and have safe and private browsing.",
+      "description": "Fingerprinting is a way of uniquely identifying your browser. \n\n Here is a new paragraph"
+    }, {
+      "name": "Phishing",
+      "linkAddress": "/phishingTest",
+      "linkName": "Try the Phishing Test",
+      "description": "Phishing is often acomplished using misleading urls"
+    }
+  ]
+}

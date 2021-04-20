@@ -5,7 +5,8 @@ import {
     Route
 } from 'react-router-dom';
 import LandingPage from './landingPage/landingPage.jsx';
-import PhishingTest from './phishingTest/phishingTest.jsx';
+import PhishingTest from './phishingTest/phishingTest';
+import Topic from './topic/topic'
 
 
 export default function App() {
@@ -15,11 +16,19 @@ export default function App() {
           <Switch>
             <Route
               exact path="/"
-              component={LandingPage}
+              component={ LandingPage }
+            />
+            <Route
+              exact path="/phishing"
+              render={ (props) => <Topic {...props} topic={'Phishing'} /> }
             />
             <Route
               exact path="/phishingTest"
-              component={PhishingTest}
+              component={ PhishingTest }
+            />
+            <Route
+              exact path="/fingerprinting"
+              render={ (props) => <Topic {...props} topic={'Fingerprinting'} /> }
             />
           </Switch>
         </div>

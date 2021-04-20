@@ -33,7 +33,7 @@ export default class QuestionDisplay extends React.Component {
 
         return (
             <div className="banner">
-                <h1 className="banner-title question">{ this.props.question.url }</h1>
+                <h1 id="question" className="banner-title">{ this.props.question.url }</h1>
                 <h4>Where does this go?</h4>
                 <div>
                     <QuestionButtons
