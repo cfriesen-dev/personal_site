@@ -1,6 +1,5 @@
 import React from 'react';
 import {
-    BrowserRouter,
     Switch,
     Route
 } from 'react-router-dom';
@@ -11,7 +10,6 @@ import Topic from './topic/topic'
 
 export default function App() {
   return (
-    <BrowserRouter>
         <div className="App">
           <Switch>
             <Route
@@ -31,11 +29,10 @@ export default function App() {
               render={ (props) => <Topic {...props} topic={'Fingerprinting'} /> }
             />
             <Route
-                  exact path="/anonymity"
-                  render={ (props) => <Topic {...props} topic={'Anonymity'} /> }
+              exact path="/anonymity"
+              render={ (props) => <Topic {...props} topic={'Anonymity'} /> }
             />
           </Switch>
         </div>
-    </BrowserRouter>
   );
 }
