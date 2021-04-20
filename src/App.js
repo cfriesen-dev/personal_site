@@ -30,6 +30,10 @@ export default function App() {
               exact path="/fingerprinting"
               render={ (props) => <Topic {...props} topic={'Fingerprinting'} /> }
             />
+            <Route
+                  exact path="/anonymity"
+                  render={ (props) => <Topic {...props} topic={'Anonymity'} /> }
+            />
           </Switch>
         </div>
     </BrowserRouter>

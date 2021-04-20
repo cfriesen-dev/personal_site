@@ -45,31 +45,31 @@ export const PHISHING_CATEGORIES = [
     {
         "id": 0,
         "name": "Login information",
-        "description": ""
+        "description": "Login information that will be ignored if not looked for by the destination site. Can be used to include the domain name of a trusted entity."
     }, {
         "id": 1,
         "name": "Misspelling",
-        "description": ""
+        "description": "Easily mis-typed or overlooked mispellings of the trusted entity."
     }, {
         "id": 2,
         "name": "Incorrect/Unfamiliar TLD",
-        "description": ""
+        "description": "Correct name as part of the domain for the trusted entity but registered under a different TLD (Top Level Domain) and therefore a completely different site."
     }, {
         "id": 3,
         "name": "WWW included",
-        "description": ""
+        "description": "WWW included in the domain name as opposed to being a subdomain to appear as the original site's www.name.com"
     }, {
         "id": 4,
         "name": "Character homophone switch",
-        "description": ""
+        "description": "Using a character from another language's character set (such as cyrillic) that looks very similar to a character in the latin set."
     }, {
         "id": 5,
         "name": "Obfuscation",
-        "description": ""
+        "description": "Using URL encodings as well as other pieces such as logins, punycode, etc. to make the URL less readable in general."
     }, {
         "id": 6,
         "name": "IP Only",
-        "description": ""
+        "description": "Only showing the IP address and not any domain information at all."
     }
 ]
 

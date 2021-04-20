@@ -12,6 +12,7 @@ class NavMenu extends React.Component {
 						<li><Link to='/'><h1 className="banner-title">Chris Friesen</h1></Link></li>
 						<li className='link-underline'><Link to='/phishing'>Phishing</Link></li>
 						<li className='link-underline'><Link to='/fingerprinting'>Fingerprinting</Link></li>
+						<li className='link-underline'><Link to='/anonymity'>Anonymity</Link></li>
 					</ul>
 				</nav>
 			</div>

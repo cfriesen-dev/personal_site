@@ -12,7 +12,7 @@
 /**********/
 #footer {
 	display: inline-block;
-	color: #aaa;
+	color: #999;
 	font-size: 10px;
 	margin: 50px auto 30px auto;
 	text-align: center;
@@ -47,21 +47,25 @@
 }
 
 li.url {
-	color: #aaaaaa;
+	color: #999;
 }
 
 .correct-answer {
-	font-weight: 600;
+	font-weight: 800;
 	color: #77bfa3;
 }
 
 .incorrect-answer {
-	font-weight: 600;
+	font-weight: 800;
 	color: crimson;
 }
 
-.phishing-category {
+#phishing-category {
 	margin-left: 30px;
+}
+
+#phishing-category span {
+	font-weight: bolder;
 }
 
 /**************/
@@ -107,5 +111,5 @@ li.url {
 
 #example-urls {
 	margin-bottom: 20px;
-	color: #aaa;
+	color: #999;
 }

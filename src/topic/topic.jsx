@@ -1,4 +1,5 @@
 import React from 'react';
+import parse from 'html-react-parser';
 import NavMenu from '../nav/nav';
 import './topic.css'
 import {Link} from "react-router-dom";
@@ -77,7 +78,7 @@ class Topic extends React.Component {
                         }
                     </div>
                     <div className="column right-column">
-                        { this.state.data.description }
+                        { parse(this.state.data.description) }
                     </div>
                 </div>
             </div>

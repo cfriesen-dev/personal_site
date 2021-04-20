@@ -5,9 +5,11 @@ import * as Constants from "../utils/constants";
 export default function CategoryDescription(props) {
     if (typeof props.category === 'undefined') return null;
 
+    let category = Constants.PHISHING_CATEGORIES[props.category];
+
     return (
-        <p className="phishing-category">
-            { Constants.PHISHING_CATEGORIES[props.category].name }
+        <p id="phishing-category">
+            <span id="category-name">{ category.name }</span>: { category.description }
         </p>
     );
 }
