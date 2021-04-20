@@ -29,6 +29,7 @@ export default class PhishingResults extends React.Component {
                     <div id="score-box">
                         { score + "/" + this.props.questionSet.length }
                     </div>
+                    <br />
                     <button
                         className="button vertical-buttons"
                         onClick={ this.toggleUrlReview }>

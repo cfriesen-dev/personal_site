@@ -2,7 +2,7 @@ import React from 'react';
 import parse from 'html-react-parser';
 import NavMenu from '../nav/nav';
 import './topic.css'
-import {Link} from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 
 const TOPIC_DATA = require("./topics.json");
@@ -25,7 +25,6 @@ class Topic extends React.Component {
 
         this.updateTopicData = this.updateTopicData.bind(this);
         this.openDocument = this.openDocument.bind(this);
-        this.redirect = this.redirect.bind(this);
     }
 
     updateTopicData(props) {
@@ -49,36 +48,36 @@ class Topic extends React.Component {
         }
     }
 
-    redirect() {
-        console.log("made it to redirect");
-    }
-
     render() {
         if (this.props.topic !== this.state.topic) {
             this.updateTopicData();
         }
 
+        let data = this.state.data;
+
         return (
             <div>
                 <NavMenu />
                 <div id="topic-container" className="column-container">
-                    <h1 id="topic-name" className="banner-title">{ this.state.data.name }</h1>
+                    <h1 id="topic-name" className="banner-title">{ data.name }</h1>
                     <div className="column left-column">
-                        {this.state.data.documentName &&
-                            <button
-                                className="button vertical-buttons"
-                                onClick={this.openDocument()}>
-                                View {this.state.data.documentName }
-                            </button>
+                        { data.documentName &&
+                            <a
+                                href={ require('./../documents/fingerprintingLiteratureReview.pdf').default }
+                                target='_blank'
+                                rel='noopener noreferrer'
+                                className="button vertical-buttons">
+                                View { data.documentName }
+                            </a>
                         }
-                        { this.state.data.linkAddress &&
-                            <Link to={ this.state.data.linkAddress } className="button vertical-buttons">
-                                {this.state.data.linkName}
+                        { data.linkAddress &&
+                            <Link to={ data.linkAddress } className="button vertical-buttons">
+                                { data.linkName }
                             </Link>
                         }
                     </div>
                     <div className="column right-column">
-                        { parse(this.state.data.description) }
+                        { parse(data.description) }
                     </div>
                 </div>
             </div>

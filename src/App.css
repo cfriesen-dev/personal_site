@@ -95,7 +95,7 @@ input[type="button"] {
 }
 
 .vertical-buttons {
-  display: block;
+  display: inline-block;
   margin-top: .5rem;
 }
 
