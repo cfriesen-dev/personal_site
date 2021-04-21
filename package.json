@@ -1,7 +1,7 @@
 {
   "name": "cfriesen-dev-site",
   "version": "0.1.0",
-  "homepage": "https://cfriesen-dev.github.io/personal_site/",
+  "homepage": "https://cfriesen-dev.github.io/",
   "private": true,
   "dependencies": {
     "gh-pages": "^3.1.0",
