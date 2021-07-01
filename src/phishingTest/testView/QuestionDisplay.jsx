@@ -34,7 +34,7 @@ export default class QuestionDisplay extends React.Component {
         return (
             <div className="banner">
                 <h1 id="question" className="banner-title">{ this.props.question.url }</h1>
-                <h4>Where does this go?</h4>
+                <h4>If the above address were a link where would it go?</h4>
                 <div>
                     <QuestionButtons
                         allOptions={ allDestinations }

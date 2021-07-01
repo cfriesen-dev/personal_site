@@ -58,7 +58,7 @@ class Topic extends React.Component {
         return (
             <div>
                 <NavMenu />
-                <div id="topic-container">
+                <div id="container">
                     <h1 id="topic-name" className="banner-title">{ data.name }</h1>
                     <div className="column-container">
                         <div id="topic-buttons" className="column left-column">

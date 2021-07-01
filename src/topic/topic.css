@@ -4,11 +4,7 @@
 
 #topic-name {
     font-size: 45px;
-}
-
-#topic-container {
-    margin: 0px auto 0px auto;
-    width: 80%;
+    margin-left: 4%;
 }
 
 #topic-buttons {
@@ -18,5 +14,5 @@
 
 #topic-description {
     min-width: 300px;
-    max-width: 650px
+    max-width: 650px;
 }

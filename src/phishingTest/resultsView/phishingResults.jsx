@@ -22,30 +22,32 @@ export default class PhishingResults extends React.Component {
         const score = this.props.questionSet.length - this.props.incorrect.length;
 
         return (
-            <div className="column-container">
+            <div className="container">
                 <UrlReview
                     expanded={ this.state.urlReviewExpanded } />
-                <div className="column left-column">
-                    <div id="score-box">
-                        { score + "/" + this.props.questionSet.length }
+                <div className="column-container">
+                    <div className="column left-column">
+                        <div id="score-box">
+                            { score + "/" + this.props.questionSet.length }
+                        </div>
+                        <br />
+                        <button
+                            className="button vertical-buttons"
+                            onClick={ this.toggleUrlReview }>
+                            Review URL structure
+                        </button>
+                        <button
+                            className="button vertical-buttons"
+                            onClick={ () => this.props.changeQuestionSet() } >
+                            { this.props.advanced ? "Try Again" : "Advanced Questions" }
+                        </button>
                     </div>
-                    <br />
-                    <button
-                        className="button vertical-buttons"
-                        onClick={ this.toggleUrlReview }>
-                        Review URL structure
-                    </button>
-                    <button
-                        className="button vertical-buttons"
-                        onClick={ () => this.props.changeQuestionSet() } >
-                        { this.props.advanced ? "Try Again" : "Advanced Questions" }
-                    </button>
-                </div>
 
-                <div className="column right-column">
-                    <AnswerList
-                        questionSet={ this.props.questionSet }
-                        incorrect={ this.props.incorrect } />
+                    <div className="column right-column">
+                        <AnswerList
+                            questionSet={ this.props.questionSet }
+                            incorrect={ this.props.incorrect } />
+                    </div>
                 </div>
             </div>
         );

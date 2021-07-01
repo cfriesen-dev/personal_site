@@ -8,6 +8,18 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+@media (max-width: 480px) and (orientation: portrait) {
+  .text {
+    font-size: 18px;
+  }
+}
+
+.container {
+  margin: 0px auto 0px auto;
+  width: 80%;
+}
+
+
 
 /*********/
 /* Forms */
@@ -97,6 +109,7 @@ input[type="button"] {
 .vertical-buttons {
   display: inline-block;
   margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .button:hover,
@@ -182,12 +195,16 @@ li {
 }
 
 .left-column {
+  min-width: 300px;
+  max-width: 450px;
   width: 45%;
   margin-left: 4%;
   margin-right: 1%;
 }
 
 .right-column {
+  min-width: 300px;
+  max-width: 650px;
   width: 45%;
   margin-right: 4%;
   margin-left: 1%;
