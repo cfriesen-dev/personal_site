@@ -14,7 +14,7 @@ class LandingPage extends React.Component {
 					<p>Welcome to my corner of the internet. I'm an early stage cyber professional completing
 					my MSc in Cyber Security, Privacy, and Trust at the University of Edinburgh. Find me on&nbsp;
 						<a href='https://github.com/cfriesen-dev'>Github</a>&nbsp;and&nbsp;
-						<a href=''>LinkedIn</a>
+						<a href='https://www.linkedin.com/in/cfriesen/'>LinkedIn</a>
 					</p>
 					<p>Here are some of my dabbles others might find interesting:</p></h4>
 
