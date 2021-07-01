@@ -5,3 +5,18 @@
 #topic-name {
     font-size: 45px;
 }
+
+#topic-container {
+    margin: 0px auto 0px auto;
+    width: 80%;
+}
+
+#topic-buttons {
+    min-width: 300px;
+    max-width: 450px;
+}
+
+#topic-description {
+    min-width: 300px;
+    max-width: 650px
+}

@@ -58,26 +58,28 @@ class Topic extends React.Component {
         return (
             <div>
                 <NavMenu />
-                <div id="topic-container" className="column-container">
+                <div id="topic-container">
                     <h1 id="topic-name" className="banner-title">{ data.name }</h1>
-                    <div className="column left-column">
-                        { data.documentName &&
-                            <a
-                                href={ require('./../documents/fingerprintingLiteratureReview.pdf').default }
-                                target='_blank'
-                                rel='noopener noreferrer'
-                                className="button vertical-buttons">
-                                View { data.documentName }
-                            </a>
-                        }
-                        { data.linkAddress &&
-                            <Link to={ data.linkAddress } className="button vertical-buttons">
-                                { data.linkName }
-                            </Link>
-                        }
-                    </div>
-                    <div className="column right-column">
-                        { parse(data.description) }
+                    <div className="column-container">
+                        <div id="topic-buttons" className="column left-column">
+                            { data.documentName &&
+                                <a
+                                    href={ require('./../documents/fingerprintingLiteratureReview.pdf').default }
+                                    target='_blank'
+                                    rel='noopener noreferrer'
+                                    className="button vertical-buttons">
+                                    View { data.documentName }
+                                </a>
+                            }
+                            { data.linkAddress &&
+                                <Link to={ data.linkAddress } className="button vertical-buttons">
+                                    { data.linkName }
+                                </Link>
+                            }
+                        </div>
+                        <div id="topic-description" className="column right-column">
+                            { parse(data.description) }
+                        </div>
                     </div>
                 </div>
             </div>

@@ -19,6 +19,10 @@
 }
 
 #title ul.nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
 	margin: 50px auto 50px auto;
 }
 

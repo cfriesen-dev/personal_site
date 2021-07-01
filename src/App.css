@@ -176,9 +176,9 @@ li {
   position: relative;
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
   box-sizing: border-box;
   float: left;
+  flex: 1
 }
 
 .left-column {
@@ -194,7 +194,8 @@ li {
 }
 
 .column-container {
-  width: 80%;
+  display: flex;
+  flex-flow: row wrap;
   margin: 0px auto 0px auto;
   z-index: 1;
 }
