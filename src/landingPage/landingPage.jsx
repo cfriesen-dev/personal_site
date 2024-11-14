@@ -11,8 +11,7 @@ class LandingPage extends React.Component {
 
 				<h1 className="banner-title">Chris Friesen</h1>
 				<h4>
-					<p className="text">Welcome to my corner of the internet. I'm an early stage cyber professional completing
-					my MSc in Cyber Security, Privacy, and Trust at the University of Edinburgh. Find me on&nbsp;
+					<p className="text">Welcome to my corner of the internet. Software engineer building security conscious architecture. Find me on&nbsp;
 						<a href='https://github.com/cfriesen-dev'>Github</a>&nbsp;and&nbsp;
 						<a href='https://www.linkedin.com/in/cfriesen/'>LinkedIn</a>
 					</p>
