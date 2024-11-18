@@ -4,16 +4,23 @@
   "homepage": "https://cfriesen-dev.github.io/",
   "private": true,
   "dependencies": {
-    "gh-pages": "^3.1.0",
-    "html-react-parser": "^1.2.6",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "tldjs": "^2.3.1"
+    "@fingerprintjs/fingerprintjs": "^4.5.1",
+    "gh-pages": "^6.2.0",
+    "html-react-parser": "^5.1.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.0",
+    "tldjs": "^2.3.1",
+    "url": "^0.11.4"
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
+  },
+  "browser": {
+    "url": false
   },
   "scripts": {
-    "start": "NODE_PATH=src react-scripts start",
+    "start": "PORT=3000 NODE_PATH=src react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "build": "react-scripts build",
