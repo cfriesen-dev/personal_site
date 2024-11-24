@@ -12,8 +12,6 @@
       "description": "<p>Phishing is the attempt to gain sensitive information by fraudulently misrepresenting a trusted party in digital communications and is the most common form of cyber attack.</p><p>Research by <a href='https://groups.inf.ed.ac.uk/tulips/papers/albakry2020.pdf'>Albakry, Vaniea, and Wolters</a> at the University of Edinburgh tested the ability for the average user to be able to detect phishing links when viewing URLs.</p><p>Using their original questions as well as creating a secondary advanced set I built my own test to check my friends' and family's abilities. Feel free to try it out here and see how well you can defend yourself!</p>"
     }, {
       "name": "Anonymity",
-      "documentName": "Literature Review",
-      "documentLocation": "./../documents/fingerprintingLiteratureReview.pdf",
       "description": "<p>My MSc dissertation was in determining the cost function for anonymity vs performance metrics for anonymous mix networks.</p><p>This is a topic that is coming into relevance as mix networks have been overlooked as an anonymity solution due to their dependence on artificial delays (making them less attractive for real time applications). However, with the rise of more powerful global adversaries, mainstream systems such as Tor fall victim to traffic analysis attacks.</p><p>If mix network topologies can be shown to maintain performance guarantees as well as privacy ones their findings can be adapted to the Tor network or deployed as a stand alone system. To read it please inquire.</p>"
     }
   ]
