@@ -42,7 +42,6 @@ class Topic extends React.Component {
     }
 
     openDocument() {
-        console.log("made it to OpenDocument");
         if (this.state.data.documentName) {
 
         }
