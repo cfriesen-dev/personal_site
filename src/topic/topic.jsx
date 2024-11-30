@@ -3,6 +3,7 @@ import parse from 'html-react-parser';
 import NavMenu from '../nav/nav';
 import './topic.css'
 import {Link} from 'react-router-dom';
+import litReview from './../documents/fingerprintingLiteratureReview.pdf'
 
 
 const TOPIC_DATA = require("./topics.json");
@@ -42,8 +43,14 @@ class Topic extends React.Component {
     }
 
     openDocument() {
-        if (this.state.data.documentName) {
-
+        if (this.state.data.documentName === 'Literature Review') {
+            return <a
+                    href={ litReview }
+                    target='_blank'
+                    rel='noopener noreferrer'
+                    className="button vertical-buttons">
+                    View { this.state.data.documentName }
+                </a>
         }
     }
 
@@ -61,15 +68,7 @@ class Topic extends React.Component {
                     <h1 id="topic-name" className="banner-title">{ data.name }</h1>
                     <div className="column-container">
                         <div id="topic-buttons" className="column left-column">
-                            { data.documentName &&
-                                <a
-                                    href={ require('./../documents/fingerprintingLiteratureReview.pdf').default }
-                                    target='_blank'
-                                    rel='noopener noreferrer'
-                                    className="button vertical-buttons">
-                                    View { data.documentName }
-                                </a>
-                            }
+                            { data.documentName && this.openDocument()}
                             { data.linkAddress &&
                                 <Link to={ data.linkAddress } className="button vertical-buttons">
                                     { data.linkName }
