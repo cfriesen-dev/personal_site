@@ -16,9 +16,6 @@
   "devDependencies": {
     "react-scripts": "^5.0.1"
   },
-  "browser": {
-    "url": false
-  },
   "scripts": {
     "start": "PORT=3000 NODE_PATH=src react-scripts start",
     "predeploy": "npm run build",
