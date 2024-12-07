@@ -16,8 +16,10 @@
     "url": "^0.11.4"
   },
   "devDependencies": {
-    "react-scripts": "^5.0.1",
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.0"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.0",
+    "@testing-library/dom": "^10.4.0",
+    "@testing-library/user-event": "^14.5.2",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
     "start": "PORT=3000 NODE_PATH=src react-scripts start",
