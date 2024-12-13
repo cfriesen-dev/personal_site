@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import UrlReview from "./UrlReview";
+import UrlReview from "./urlReview";
 import AnswerList from "./answerList";
 
 export default class PhishingResults extends React.Component {

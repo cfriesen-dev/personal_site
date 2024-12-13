@@ -2,27 +2,27 @@ import React from "react";
 import NavMenu from "../nav/nav.jsx";
 import "./phishingTest.css";
 import "../App.css";
-import ResearchFooter from "./ResearchFooter";
+import ResearchFooter from "./testView/researchFooter.jsx";
 import PhishingResults from "./resultsView/phishingResults";
-import QuestionDisplay from "./testView/QuestionDisplay";
-import WarningFooter from "./WarningFooter";
+import QuestionDisplay from "./testView/questionDisplay.jsx";
+import WarningFooter from "./testView/warningFooter.jsx";
 
 
 const QUESTION_DATA = require("./data/phishingTestData.json");
 
-function computeSetId() {
-	return Math.floor(Math.random() * 2);
+function fetchRandomSet(sets) {
+	let setId = Math.floor(Math.random() * sets.length);
+	return sets[setId]
 }
 
 export default class PhishingTest extends React.Component {
 	constructor(props) {
 		super(props);
 
-		const setId = computeSetId();
 		this.state = {
 			questionId: 0,
 			incorrect: [],
-			questionSet: QUESTION_DATA.standard[setId],
+			questionSet: fetchRandomSet(QUESTION_DATA.standard),
 			advanced: false
 		}
 		this.handleAnswer = this.handleAnswer.bind(this);
@@ -44,12 +44,10 @@ export default class PhishingTest extends React.Component {
 	}
 
 	changeQuestionSet() {
-		const setId = computeSetId();
-
 		this.setState({
 			questionId: 0,
 			incorrect: [],
-			questionSet: QUESTION_DATA.advanced[setId],
+			questionSet: fetchRandomSet(QUESTION_DATA.advanced),
 			advanced: true
 		});
 	}

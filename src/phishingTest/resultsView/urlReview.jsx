@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import * as Constants from "../utils/constants";
-import UrlStructure from "./UrlStructure"
+import UrlStructure from "./urlStructure"
 import UrlSyntaxHighlight from "../utils/UrlSyntaxHighlight";
 
 

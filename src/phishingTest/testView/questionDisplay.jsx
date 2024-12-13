@@ -1,6 +1,6 @@
 import React from "react";
 import * as Constants from "../utils/constants";
-import QuestionButtons from "./QuestionButtons";
+import QuestionButtons from "./questionButtons";
 import PropTypes from "prop-types";
 
 
