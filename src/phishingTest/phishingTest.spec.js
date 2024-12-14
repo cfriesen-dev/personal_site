@@ -5,4 +5,4 @@ import '@testing-library/jest-dom'
 
 it('renders without crashing', () => {
     render(<PhishingTest />, {wrapper: HashRouter});
-  });
+});
