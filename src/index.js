@@ -18,7 +18,7 @@ const router = createHashRouter([{
 },
 {
 	path: "/phishingTest",
-	element: <PhishingTest />,
+	element: <PhishingTest advanced={false} />,
 	errorElement: <ErrorPage />,
 },
 {

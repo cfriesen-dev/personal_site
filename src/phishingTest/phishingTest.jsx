@@ -6,6 +6,7 @@ import ResearchFooter from "./testView/researchFooter.jsx";
 import PhishingResults from "./resultsView/phishingResults";
 import QuestionDisplay from "./testView/questionDisplay.jsx";
 import WarningFooter from "./testView/warningFooter.jsx";
+import PropTypes from "prop-types";
 
 
 const QUESTION_DATA = require("./data/phishingTestData.json");
@@ -23,7 +24,7 @@ export default class PhishingTest extends React.Component {
 			questionId: 0,
 			incorrect: [],
 			questionSet: fetchRandomSet(QUESTION_DATA.standard),
-			advanced: false
+			advanced: this.props.advanced
 		}
 		this.handleAnswer = this.handleAnswer.bind(this);
 		this.changeQuestionSet = this.changeQuestionSet.bind(this);
@@ -77,4 +78,8 @@ export default class PhishingTest extends React.Component {
 	      </div>
 	    )
   	}
+}
+
+PhishingTest.propTypes = {
+    advanced: PropTypes.bool.isRequired
 }
