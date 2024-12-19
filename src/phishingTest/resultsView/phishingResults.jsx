@@ -56,6 +56,11 @@ export default class PhishingResults extends React.Component {
 
 PhishingResults.propTypes = {
     incorrect: PropTypes.arrayOf(PropTypes.number).isRequired,
-    questionSet: PropTypes.array.isRequired,
+    questionSet: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        url: PropTypes.string.isRequired,
+        destinations: PropTypes.arrayOf(PropTypes.string).isRequired,
+        answer: PropTypes.string.isRequired,
+      })).isRequired,
     changeQuestionSet: PropTypes.func.isRequired,
 }

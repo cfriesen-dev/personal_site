@@ -20,6 +20,6 @@ export default function UrlStructure(props) {
 }
 
 UrlStructure.propTypes = {
-    handleMouseEnter:PropTypes.func,
-    handleMouseLeave:PropTypes.func
+    handleMouseEnter:PropTypes.func.isRequired,
+    handleMouseLeave:PropTypes.func.isRequired
 }

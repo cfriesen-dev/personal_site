@@ -20,11 +20,13 @@ export default class PhishingTest extends React.Component {
 	constructor(props) {
 		super(props);
 
+		const advanced = (this.props.advanced === undefined) ? false : this.props.advanced;
+
 		this.state = {
 			questionId: 0,
 			incorrect: [],
 			questionSet: fetchRandomSet(QUESTION_DATA.standard),
-			advanced: this.props.advanced
+			advanced: advanced
 		}
 		this.handleAnswer = this.handleAnswer.bind(this);
 		this.changeQuestionSet = this.changeQuestionSet.bind(this);
@@ -81,5 +83,5 @@ export default class PhishingTest extends React.Component {
 }
 
 PhishingTest.propTypes = {
-    advanced: PropTypes.bool.isRequired
+    advanced: PropTypes.bool
 }

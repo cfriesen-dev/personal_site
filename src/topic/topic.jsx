@@ -4,6 +4,7 @@ import NavMenu from '../nav/nav';
 import './topic.css'
 import {Link} from 'react-router-dom';
 import litReview from './../documents/fingerprintingLiteratureReview.pdf'
+import PropTypes from "prop-types";
 
 
 const TOPIC_DATA = require("./topics.json");
@@ -87,4 +88,10 @@ class Topic extends React.Component {
 
 }
 
+
+Topic.propTypes = {
+    topic: PropTypes.string.isRequired,
+}
+
 export default Topic;
+

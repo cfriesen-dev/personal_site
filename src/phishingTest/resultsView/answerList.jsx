@@ -1,6 +1,7 @@
 import React from "react";
 import UrlSyntaxHighlight from "../utils/UrlSyntaxHighlight";
 import CategoryDescription from "./categoryDescription";
+import PropTypes from "prop-types";
 
 
 export default function AnswerList(props) {
@@ -21,4 +22,13 @@ export default function AnswerList(props) {
             ) }
         </ol>
     );
+}
+
+AnswerList.propTypes = {
+    questionSet: PropTypes.arrayOf(PropTypes.shape({
+        id: PropTypes.number.isRequired,
+        url: PropTypes.string.isRequired,
+        destinations: PropTypes.arrayOf(PropTypes.string).isRequired,
+        answer: PropTypes.string.isRequired,
+      })).isRequired,
 }
