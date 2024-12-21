@@ -16,5 +16,5 @@ export default function CategoryDescription(props) {
 }
 
 CategoryDescription.propTypes = {
-    category: PropTypes.string.isRequired,
+    category: PropTypes.string,
 }

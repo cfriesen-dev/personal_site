@@ -31,4 +31,5 @@ AnswerList.propTypes = {
         destinations: PropTypes.arrayOf(PropTypes.string).isRequired,
         answer: PropTypes.string.isRequired,
       })).isRequired,
+      incorrect: PropTypes.arrayOf(PropTypes.number)
 }
