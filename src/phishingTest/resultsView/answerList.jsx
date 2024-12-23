@@ -1,5 +1,5 @@
 import React from "react";
-import UrlSyntaxHighlight from "../utils/UrlSyntaxHighlight";
+import UrlSyntaxHighlight from "../utils/urlSyntaxHighlight";
 import CategoryDescription from "./categoryDescription";
 import PropTypes from "prop-types";
 
