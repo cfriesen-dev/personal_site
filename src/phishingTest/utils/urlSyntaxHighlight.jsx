@@ -41,8 +41,8 @@ export default function UrlSyntaxHighlight(props) {
 }
 
 UrlSyntaxHighlight.propTypes = {
-    field: PropTypes.string.isRequired,
     urlString: PropTypes.string.isRequired,
+    field: PropTypes.string,
     isIncorrect: PropTypes.bool,
     target: PropTypes.string
 }
