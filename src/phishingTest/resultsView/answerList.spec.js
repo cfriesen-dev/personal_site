@@ -1,5 +1,5 @@
 import AnswerList from "./answerList";
-import { render } from '@testing-library/react'
+import { render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 
 it('renders without crashing', () => {
@@ -22,4 +22,41 @@ it('renders without crashing', () => {
             }]
         }
         incorrect={ [] }/>);
+});
+
+it('includes category if present', () => {
+    render(<AnswerList 
+        questionSet={
+            [{
+                id: 2,
+                url: "https://twittter.com",
+                category: 1,
+                target: "ttt",
+                destinations: [
+                    "Twitter's Website", "Mobile's website"
+                ],
+                answer: "A website not listed"
+            }]
+        }
+        incorrect={ [1] }/>);
+
+        expect(screen.getByText(/Misspelling/i)).toBeInTheDocument()
+});
+
+it('excludes category if not present', () => {
+    render(<AnswerList 
+        questionSet={
+            [{
+                id: 2,
+                url: "https://twittter.com",
+                target: "ttt",
+                destinations: [
+                    "Twitter's Website", "Mobile's website"
+                ],
+                answer: "A website not listed"
+            }]
+        }
+        incorrect={ [1] }/>);
+
+        expect(screen.queryByText(/Misspelling/i)).not.toBeInTheDocument()
 });
