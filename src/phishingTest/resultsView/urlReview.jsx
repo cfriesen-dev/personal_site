@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import * as Constants from "../utils/constants";
 import UrlStructure from "./urlStructure"
-import UrlSyntaxHighlight from "../utils/UrlSyntaxHighlight";
+import UrlSyntaxHighlight from "../utils/urlSyntaxHighlight";
 
 
 export default class UrlReview extends React.Component {
