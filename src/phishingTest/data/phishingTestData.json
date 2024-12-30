@@ -94,69 +94,55 @@
 				"answer": "Western Union's website"
 			}, {
 				"id": 13,
-				"url": "https://profile.purepoint.com",
-				"destinations": [
-					"Purepoint's website", "Profile's website"
-				],
-				"answer": "Purepoint's website"
-			}, {
-				"id": 14,
 				"url": "https://revolut.mobile.com",
 				"destinations": [
 					"Mobile's website", "Revolut's website"
 				],
 				"answer": "Mobile's website"
 			}, {
-				"id": 15,
+				"id": 14,
 				"url": "https://bit.ly/1bdDlXc",
 				"destinations": [
 					"Paypal's website", "CNN's website"
 				],
 				"answer": "Redirects to another website"
 			}, {
-				"id": 16,
+				"id": 15,
 				"url": "https://goo.gl/fJOIAv",
 				"destinations": [
 					"Twitter's website", "Google's website"
 				],
 				"answer": "Redirects to another website"
 			}, {
-				"id": 17,
+				"id": 16,
 				"url": "https://po.st/If6RgX",
 				"destinations": [
 					"Google's website", "Revolut's website"
 				],
 				"answer": "Redirects to another website"
 			}, {
-				"id": 18,
-				"url": "https://u.to/SbwC",
-				"destinations": [
-					"Facebook's website", "TravBuddy's website"
-				],
-				"answer": "Redirects to another website"
-			}, {
-				"id": 19,
+				"id": 17,
 				"url": "https://facebook.com@google.com",
 				"destinations": [
 					"Google's website", "Facebook's website"
 				],
 				"answer": "Google's website"
 			}, {
-				"id": 20,
+				"id": 18,
 				"url": "https://twitter.com/facebook.com",
 				"destinations": [
 					"Twitter's website", "Facebook's website"
 				],
 				"answer": "Twitter's website"
 			}, {
-				"id": 21,
+				"id": 19,
 				"url": "https://facebook.com/picture.html?a=twitter.com",
 				"destinations": [
 					"Facebook's website", "Twitter's website"
 				],
 				"answer": "Facebook's website"
 			}, {
-				"id": 22,
+				"id": 20,
 				"url": "https://facebook.com/?url=twitter",
 				"destinations": [
 					"Facebook's website", "Twitter's website"
@@ -257,69 +243,55 @@
 				"answer": "Mobile's website"
 			}, {
 				"id": 13,
-				"url": "https://purepoint.profile.com",
-				"destinations": [
-					"Profile's website", "Purepoint's website"
-				],
-				"answer": "Profile's website"
-			}, {
-				"id": 14,
 				"url": "https://mobile.revolut.com",
 				"destinations": [
 					"Revolut's website", "Mobile's website"
 				],
 				"answer": "Revolut's website"
 			}, {
-				"id": 15,
+				"id": 14,
 				"url": "https://bit.ly/1bdDlXc",
 				"destinations": [
 					"Paypal's website", "CNN's website"
 				],
 				"answer": "Redirects to another website"
 			}, {
-				"id": 16,
+				"id": 15,
 				"url": "https://goo.gl/fJOIAv",
 				"destinations": [
 					"Twitter's website", "Google's website"
 				],
 				"answer": "Redirects to another website"
 			}, {
-				"id": 17,
-				"url": "https://po.st/If6RgX",
-				"destinations": [
-					"Google's website", "Revolut's website"
-				],
-				"answer": "Redirects to another website"
-			}, {
-				"id": 18,
+				"id": 16,
 				"url": "https://u.to/SbwC",
 				"destinations": [
 					"Facebook's website", "TravBuddy's website"
 				],
 				"answer": "Redirects to another website"
 			}, {
-				"id": 19,
+				"id": 17,
 				"url": "https://facebook.com@google.com",
 				"destinations": [
 					"Google's website", "Facebook's website"
 				],
 				"answer": "Google's website"
 			}, {
-				"id": 20,
+				"id": 18,
 				"url": "https://twitter.com/facebook.com",
 				"destinations": [
 					"Twitter's website", "Facebook's website"
 				],
 				"answer": "Twitter's website"
 			}, {
-				"id": 21,
+				"id": 19,
 				"url": "https://facebook.com/picture.html?a=twitter.com",
 				"destinations": [
 					"Facebook's website", "Twitter's website"
 				],
 				"answer": "Facebook's website"
 			}, {
-				"id": 22,
+				"id": 20,
 				"url": "https://facebook.com/?url=twitter",
 				"destinations": [
 					"Facebook's website", "Twitter's website"
