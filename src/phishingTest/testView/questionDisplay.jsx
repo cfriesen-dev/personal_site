@@ -1,6 +1,7 @@
 import React from "react";
 import * as Constants from "../utils/constants";
 import QuestionButtons from "./questionButtons";
+import ProgressBar from "./progressBar";
 import PropTypes from "prop-types";
 
 
@@ -41,6 +42,10 @@ export default class QuestionDisplay extends React.Component {
                         handleClick={ this.handleClick }
                     />
                 </div>
+                <ProgressBar
+                    width={ "100%" }
+                    progress={ (this.props.question.id / this.props.totalQuestions) * 100 }
+                />
             </div>
         )
     }
@@ -48,5 +53,6 @@ export default class QuestionDisplay extends React.Component {
 
 QuestionDisplay.propTypes = {
     question: PropTypes.object.isRequired,
+    totalQuestions: PropTypes.number.isRequired,
     completeQuestion: PropTypes.func.isRequired
 }

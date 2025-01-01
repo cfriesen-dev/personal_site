@@ -72,6 +72,7 @@ export default class PhishingTest extends React.Component {
 					/> :
 					<QuestionDisplay
 						question={ question }
+						totalQuestions={ this.state.questionSet.length }
 						completeQuestion={ this.handleAnswer }
 					/>
 				}
