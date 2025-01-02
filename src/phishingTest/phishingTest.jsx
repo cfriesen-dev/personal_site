@@ -8,81 +8,83 @@ import QuestionDisplay from "./testView/questionDisplay.jsx";
 import WarningFooter from "./testView/warningFooter.jsx";
 import PropTypes from "prop-types";
 
-
 const QUESTION_DATA = require("./data/phishingTestData.json");
 
 function fetchRandomSet(sets) {
-	let setId = Math.floor(Math.random() * sets.length);
-	return sets[setId]
+  let setId = Math.floor(Math.random() * sets.length);
+  return sets[setId];
 }
 
 export default class PhishingTest extends React.Component {
-	constructor(props) {
-		super(props);
+  constructor(props) {
+    super(props);
 
-		const advanced = (this.props.advanced === undefined) ? false : this.props.advanced;
+    const advanced =
+      this.props.advanced === undefined ? false : this.props.advanced;
 
-		this.state = {
-			questionId: 0,
-			incorrect: [],
-			questionSet: fetchRandomSet(QUESTION_DATA.standard),
-			advanced: advanced
-		}
-		this.handleAnswer = this.handleAnswer.bind(this);
-		this.changeQuestionSet = this.changeQuestionSet.bind(this);
-	}
+    this.state = {
+      questionId: 0,
+      incorrect: [],
+      questionSet: fetchRandomSet(QUESTION_DATA.standard),
+      advanced: advanced,
+    };
+    this.handleAnswer = this.handleAnswer.bind(this);
+    this.changeQuestionSet = this.changeQuestionSet.bind(this);
+  }
 
-	handleAnswer(isCorrectAnswer) {
-		const newQuestionId = this.state.questionId + 1;
-		let newIncorrect = this.state.incorrect;
-		
-		if (!isCorrectAnswer) {
-			newIncorrect.push(this.state.questionId);
-		}
+  handleAnswer(isCorrectAnswer) {
+    const newQuestionId = this.state.questionId + 1;
+    let newIncorrect = this.state.incorrect;
 
-		this.setState({
-			incorrect: newIncorrect,
-			questionId: newQuestionId
-		});
-	}
+    if (!isCorrectAnswer) {
+      newIncorrect.push(this.state.questionId);
+    }
 
-	changeQuestionSet() {
-		this.setState({
-			questionId: 0,
-			incorrect: [],
-			questionSet: fetchRandomSet(QUESTION_DATA.advanced),
-			advanced: true
-		});
-	}
+    this.setState({
+      incorrect: newIncorrect,
+      questionId: newQuestionId,
+    });
+  }
 
-	render() {
-  		const question = this.state.questionSet[this.state.questionId];
-  		const resultDisplayed = this.state.questionId === this.state.questionSet.length;
+  changeQuestionSet() {
+    this.setState({
+      questionId: 0,
+      incorrect: [],
+      questionSet: fetchRandomSet(QUESTION_DATA.advanced),
+      advanced: true,
+    });
+  }
 
-	    return (
-	      <div>
-	        <NavMenu />
-	        <div id='phishingTest-container'>
-				{ resultDisplayed ?
-					<PhishingResults
-						incorrect={ this.state.incorrect }
-						questionSet={ this.state.questionSet }
-						changeQuestionSet={ this.changeQuestionSet }
-						advanced={ this.state.advanced }
-					/> :
-					<QuestionDisplay
-						question={ question }
-						totalQuestions={ this.state.questionSet.length }
-						completeQuestion={ this.handleAnswer }
-					/>
-				}
-				{ this.state.advanced ? <WarningFooter /> : <ResearchFooter /> }
-	        </div>
-	      </div>
-	    )
-  	}
+  render() {
+    const question = this.state.questionSet[this.state.questionId];
+    const resultDisplayed =
+      this.state.questionId === this.state.questionSet.length;
+
+    return (
+      <div>
+        <NavMenu />
+        <div id="phishingTest-container">
+          {resultDisplayed ? (
+            <PhishingResults
+              incorrect={this.state.incorrect}
+              questionSet={this.state.questionSet}
+              changeQuestionSet={this.changeQuestionSet}
+              advanced={this.state.advanced}
+            />
+          ) : (
+            <QuestionDisplay
+              question={question}
+              totalQuestions={this.state.questionSet.length}
+              completeQuestion={this.handleAnswer}
+            />
+          )}
+          {this.state.advanced ? <WarningFooter /> : <ResearchFooter />}
+        </div>
+      </div>
+    );
+  }
 }
 
 PhishingTest.propTypes = {
-    advanced: PropTypes.bool
-}
+  advanced: PropTypes.bool,
+};

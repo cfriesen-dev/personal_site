@@ -3,16 +3,16 @@
 /********************/
 
 #topic-name {
-    font-size: 45px;
-    margin-left: 4%;
+  font-size: 45px;
+  margin-left: 4%;
 }
 
 #topic-buttons {
-    min-width: 300px;
-    max-width: 450px;
+  min-width: 300px;
+  max-width: 450px;
 }
 
 #topic-description {
-    min-width: 300px;
-    max-width: 650px;
+  min-width: 300px;
+  max-width: 650px;
 }

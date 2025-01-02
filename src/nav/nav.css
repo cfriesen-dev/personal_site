@@ -3,46 +3,46 @@
 /*******/
 
 ul.nav {
-    list-style-type: none;
-    width: 80%;
-    font-size: 18px;
+  list-style-type: none;
+  width: 80%;
+  font-size: 18px;
 }
 
 ul.nav li {
-    display: inline-block;
-    padding: 0 15px;
+  display: inline-block;
+  padding: 0 15px;
 }
 
 ul.nav li a {
-    display: block;
-    position: relative;
-    padding: 15px;
-    text-decoration: none;
-    color: #999;
+  display: block;
+  position: relative;
+  padding: 15px;
+  text-decoration: none;
+  color: #999;
 }
 
 li.link-underline a:after,
 li.link-underline a:before {
-    transition: all .5s;
+  transition: all 0.5s;
 }
 
 li.link-underline a:hover {
-    color: #98C9A3;
+  color: #98c9a3;
 }
 
 li.link-underline a:after {
-    position: absolute;
-    margin:auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 0;
-    content: '.';
-    color: transparent;
-    background: #98C9A3;
-    height: 1px;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  content: ".";
+  color: transparent;
+  background: #98c9a3;
+  height: 1px;
 }
 
 li.link-underline a:hover:after {
-    width: 100%;
+  width: 100%;
 }
