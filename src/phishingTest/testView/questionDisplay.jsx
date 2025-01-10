@@ -24,6 +24,7 @@ export default class QuestionDisplay extends React.Component {
 
     const isCorrectAnswer = e.target.value === this.props.question.answer;
     this.props.completeQuestion(isCorrectAnswer);
+    e.target.blur();
   }
 
   render() {
