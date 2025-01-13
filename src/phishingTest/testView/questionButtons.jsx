@@ -3,9 +3,9 @@ import React from "react";
 import PropTypes from "prop-types";
 
 export default function QuestionButtons(props) {
-  return props.allOptions.map((option) => (
+  return props.allOptions.map((option, index) => (
     <button
-      key={option}
+      key={`${option}-${index}`}
       className="button"
       value={option}
       onClick={props.handleClick}

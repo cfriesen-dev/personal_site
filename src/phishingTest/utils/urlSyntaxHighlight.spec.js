@@ -1,5 +1,5 @@
 import UrlSyntaxHighlight from "./urlSyntaxHighlight";
-import { render, screen } from "@testing-library/react";
+import { render } from "@testing-library/react";
 import "@testing-library/jest-dom";
 
 it("renders without crashing with field", () => {

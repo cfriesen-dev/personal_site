@@ -22,10 +22,23 @@ export default class PhishingTest extends React.Component {
     const advanced =
       this.props.advanced === undefined ? false : this.props.advanced;
 
+    const questionSet =
+      this.props.questionSet === undefined
+        ? fetchRandomSet(QUESTION_DATA.standard)
+        : this.props.questionSet;
+
+    let questionId = 0;
+    if (
+      this.props.questionId === undefined &&
+      this.props.questionId < questionSet.length
+    ) {
+      questionId = this.props.questionId;
+    }
+
     this.state = {
-      questionId: 0,
+      questionId: questionId,
       incorrect: [],
-      questionSet: fetchRandomSet(QUESTION_DATA.standard),
+      questionSet: questionSet,
       advanced: advanced,
     };
     this.handleAnswer = this.handleAnswer.bind(this);
@@ -87,4 +100,13 @@ export default class PhishingTest extends React.Component {
 
 PhishingTest.propTypes = {
   advanced: PropTypes.bool,
+  questionSet: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      url: PropTypes.string.isRequired,
+      destinations: PropTypes.arrayOf(PropTypes.string).isRequired,
+      answer: PropTypes.string.isRequired,
+    }),
+  ),
+  questionId: PropTypes.number,
 };
