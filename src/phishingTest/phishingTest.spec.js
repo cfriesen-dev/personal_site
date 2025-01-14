@@ -7,6 +7,16 @@ it("renders without crashing", () => {
   render(<PhishingTest />, { wrapper: HashRouter });
 });
 
+it("allows you to set the questionSet", () => {
+  const QUESTION_DATA = require("./data/phishingTestData.json");
+
+  render(<PhishingTest questionSet={QUESTION_DATA.standard[0]} />, {
+    wrapper: HashRouter,
+  });
+  let question = QUESTION_DATA.standard[0][0];
+  expect(screen.getByText(new RegExp(question.url, "i"))).toBeInTheDocument();
+});
+
 it("renders the research footer", () => {
   render(<PhishingTest advanced={false} />, { wrapper: HashRouter });
   expect(screen.getByText(/TULiPS Research Group/i)).toBeInTheDocument();

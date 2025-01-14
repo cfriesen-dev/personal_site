@@ -10,7 +10,11 @@ import PropTypes from "prop-types";
 
 const QUESTION_DATA = require("./data/phishingTestData.json");
 
-function fetchRandomSet(sets) {
+function fetchRandomSet(questionData, advanced) {
+  let sets = questionData.standard;
+  if (advanced) {
+    sets = questionData.advanced;
+  }
   let setId = Math.floor(Math.random() * sets.length);
   return sets[setId];
 }
@@ -24,7 +28,7 @@ export default class PhishingTest extends React.Component {
 
     const questionSet =
       this.props.questionSet === undefined
-        ? fetchRandomSet(QUESTION_DATA.standard)
+        ? fetchRandomSet(QUESTION_DATA, advanced)
         : this.props.questionSet;
 
     let questionId = 0;
