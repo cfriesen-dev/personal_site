@@ -17,6 +17,16 @@ it("allows you to set the questionSet", () => {
   expect(screen.getByText(new RegExp(question.url, "i"))).toBeInTheDocument();
 });
 
+it("allows you to set the questionId", () => {
+  const QUESTION_DATA = require("./data/phishingTestData.json");
+
+  render(<PhishingTest questionId={3} />, {
+    wrapper: HashRouter,
+  });
+  let question = QUESTION_DATA.standard[0][3];
+  expect(screen.getByText(new RegExp(question.url, "i"))).toBeInTheDocument();
+});
+
 it("renders the research footer", () => {
   render(<PhishingTest advanced={false} />, { wrapper: HashRouter });
   expect(screen.getByText(/TULiPS Research Group/i)).toBeInTheDocument();
