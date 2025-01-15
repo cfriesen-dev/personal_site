@@ -20,10 +20,17 @@ it("allows you to set the questionSet", () => {
 it("allows you to set the questionId", () => {
   const QUESTION_DATA = require("./data/phishingTestData.json");
 
-  render(<PhishingTest questionId={3} />, {
-    wrapper: HashRouter,
-  });
-  let question = QUESTION_DATA.standard[0][3];
+  const questionId = 3;
+  render(
+    <PhishingTest
+      questionSet={QUESTION_DATA.standard[0]}
+      questionId={questionId}
+    />,
+    {
+      wrapper: HashRouter,
+    },
+  );
+  let question = QUESTION_DATA.standard[0][questionId];
   expect(screen.getByText(new RegExp(question.url, "i"))).toBeInTheDocument();
 });
 

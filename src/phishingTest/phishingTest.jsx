@@ -64,15 +64,15 @@ export default class PhishingTest extends React.Component {
     this.setState({
       questionId: 0,
       incorrect: [],
-      questionSet: fetchRandomSet(QUESTION_DATA.advanced),
+      questionSet: fetchRandomSet(QUESTION_DATA, true),
       advanced: true,
     });
   }
 
   render() {
-    const question = this.state.questionSet[this.state.questionId];
     const resultDisplayed =
       this.state.questionId === this.state.questionSet.length;
+    const question = this.state.questionSet[this.state.questionId];
 
     return (
       <div>
