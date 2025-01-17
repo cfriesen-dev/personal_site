@@ -13,7 +13,7 @@ export default function ProgressBar(props) {
 }
 
 const Container = styled.div`
-  width: ${(props) => props.width}px;
+  width: ${(props) => props.width}%;
 `;
 
 const Bar = styled.div`

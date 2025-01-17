@@ -49,7 +49,7 @@ export default class QuestionDisplay extends React.Component {
           />
         </div>
         <ProgressBar
-          width={"100%"}
+          width={100}
           progress={(this.props.question.id / this.props.totalQuestions) * 100}
         />
       </div>
