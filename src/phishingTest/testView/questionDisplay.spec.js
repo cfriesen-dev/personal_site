@@ -13,6 +13,7 @@ it("renders without crashing", () => {
         answer: "A website not listed",
       }}
       completeQuestion={onCompleteMock}
+      totalQuestions={10}
     />,
   );
 });
@@ -30,6 +31,7 @@ it("test data always displays valid answer", () => {
         <QuestionDisplay
           question={question}
           completeQuestion={onCompleteMock}
+          totalQuestions={10}
         />,
       );
 
@@ -54,6 +56,7 @@ it("includes default options", () => {
         answer: "A website not listed",
       }}
       completeQuestion={onCompleteMock}
+      totalQuestions={10}
     />,
   );
 
@@ -77,6 +80,7 @@ it("correctly identifies valid answers", () => {
         answer: "A website not listed",
       }}
       completeQuestion={onCompleteMock}
+      totalQuestions={10}
     />,
   );
 
@@ -98,6 +102,7 @@ it("correctly identifies invalid answers", () => {
         answer: "A website not listed",
       }}
       completeQuestion={onCompleteMock}
+      totalQuestions={10}
     />,
   );
 
