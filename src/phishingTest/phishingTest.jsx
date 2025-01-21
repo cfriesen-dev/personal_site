@@ -32,7 +32,7 @@ export default class PhishingTest extends React.Component {
         : this.props.questionSet;
 
     let questionId = 0;
-    if (this.props.questionId && this.props.questionId < questionSet.length) {
+    if (this.props.questionId && this.props.questionId <= questionSet.length) {
       questionId = this.props.questionId;
     }
 

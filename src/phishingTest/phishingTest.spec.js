@@ -45,3 +45,15 @@ it("renders the warning footer", () => {
     screen.getByText(/Do not navigate to any of the question link/i),
   ).toBeInTheDocument();
 });
+
+it("displays results view at end of question set", () => {
+  const QUESTION_DATA = require("./data/phishingTestData.json");
+  const questionSet = QUESTION_DATA.standard[0];
+  render(
+    <PhishingTest questionSet={questionSet} questionId={questionSet.length} />,
+    {
+      wrapper: HashRouter,
+    },
+  );
+  expect(screen.getByText(/Review URL structure/i)).toBeInTheDocument();
+});
