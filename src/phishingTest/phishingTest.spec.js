@@ -56,4 +56,26 @@ it("displays results view at end of question set", () => {
     },
   );
   expect(screen.getByText(/Review URL structure/i)).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", { name: /Advanced Questions/i }),
+  ).toBeInTheDocument();
+});
+
+it("changes button text if on advanced set", () => {
+  const QUESTION_DATA = require("./data/phishingTestData.json");
+  const questionSet = QUESTION_DATA.standard[0];
+  render(
+    <PhishingTest
+      advanced={true}
+      questionSet={questionSet}
+      questionId={questionSet.length}
+    />,
+    {
+      wrapper: HashRouter,
+    },
+  );
+  expect(screen.getByText(/Review URL structure/i)).toBeInTheDocument();
+  expect(
+    screen.getByRole("button", { name: /Try Again/i }),
+  ).toBeInTheDocument();
 });
