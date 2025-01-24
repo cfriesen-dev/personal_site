@@ -33,9 +33,11 @@ export default function UrlSyntaxHighlight(props) {
   const pattern = new RegExp(`(${escapedField})`);
   const segments = props.urlString.split(pattern);
 
-  return segments.map((segment) =>
+  return segments.map((segment, index) =>
     segment.match(pattern) ? (
-      <span className={highlightClassName}>{target}</span>
+      <span key={index} className={highlightClassName}>
+        {target}
+      </span>
     ) : (
       segment
     ),
