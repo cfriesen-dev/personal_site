@@ -3,7 +3,7 @@ import * as Constants from "../utils/constants";
 import PropTypes from "prop-types";
 
 export default function CategoryDescription(props) {
-  if (typeof props.category === "undefined") return null;
+  if (!props.category) return null;
 
   let category = Constants.PHISHING_CATEGORIES[props.category];
 
@@ -15,5 +15,5 @@ export default function CategoryDescription(props) {
 }
 
 CategoryDescription.propTypes = {
-  category: PropTypes.string,
+  category: PropTypes.number,
 };
