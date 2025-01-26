@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createHashRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter } from "react-router";
+import { RouterProvider } from "react-router/dom";
 import ErrorPage from "./error-page";
 import LandingPage from "./landingPage/landingPage";
 import PhishingTest from "./phishingTest/phishingTest";

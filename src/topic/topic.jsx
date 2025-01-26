@@ -2,7 +2,7 @@ import React from "react";
 import parse from "html-react-parser";
 import NavMenu from "../nav/nav";
 import "./topic.css";
-import { Link } from "react-router-dom";
+import { Link } from "react-router";
 import litReview from "./../documents/fingerprintingLiteratureReview.pdf";
 import PropTypes from "prop-types";
 

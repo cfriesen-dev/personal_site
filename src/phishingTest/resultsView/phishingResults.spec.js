@@ -1,5 +1,5 @@
 import PhishingResults from "./phishingResults";
-import { HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom";
 

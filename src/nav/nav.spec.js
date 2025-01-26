@@ -1,5 +1,5 @@
 import NavMenu from "./nav";
-import { HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router";
 import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 

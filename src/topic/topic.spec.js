@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/react";
 import Topic from "./topic";
-import { HashRouter } from "react-router-dom";
+import { HashRouter } from "react-router";
 import "@testing-library/jest-dom";
 
 it("renders all topics without crashing", () => {
