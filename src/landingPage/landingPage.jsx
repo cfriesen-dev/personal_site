@@ -6,8 +6,8 @@ import "../App.css";
 class LandingPage extends React.Component {
   render() {
     return (
-      <div id="title" className="banner">
-        <h1 className="banner-title">Chris Friesen</h1>
+      <main id="title" className="banner">
+        <header className="banner-title">Chris Friesen</header>
         <h4>
           <p className="text">
             Welcome to my corner of the internet. Software engineer building
@@ -31,7 +31,7 @@ class LandingPage extends React.Component {
             </li>
           </ul>
         </nav>
-      </div>
+      </main>
     );
   }
 }
