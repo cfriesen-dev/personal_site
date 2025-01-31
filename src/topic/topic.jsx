@@ -67,24 +67,24 @@ class Topic extends React.Component {
     return (
       <div>
         <NavMenu />
-        <div id="container">
-          <h1 id="topic-name" className="banner-title">
+        <main id="container">
+          <header id="topic-name" className="banner-title">
             {data.name}
-          </h1>
+          </header>
           <div className="column-container">
-            <div id="topic-buttons" className="column left-column">
+            <section id="topic-buttons" className="column left-column">
               {data.documentName && this.openDocument()}
               {data.linkAddress && (
                 <Link to={data.linkAddress} className="button vertical-buttons">
                   {data.linkName}
                 </Link>
               )}
-            </div>
-            <div id="topic-description" className="column right-column">
-              {parse(data.description)}
-            </div>
+            </section>
+            <section id="topic-description" className="column right-column">
+              <p>{parse(data.description)}</p>
+            </section>
           </div>
-        </div>
+        </main>
       </div>
     );
   }
