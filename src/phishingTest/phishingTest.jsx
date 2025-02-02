@@ -77,7 +77,7 @@ export default class PhishingTest extends React.Component {
     return (
       <div>
         <NavMenu />
-        <div id="phishingTest-container">
+        <section id="phishingTest-container">
           {resultDisplayed ? (
             <PhishingResults
               incorrect={this.state.incorrect}
@@ -93,7 +93,7 @@ export default class PhishingTest extends React.Component {
             />
           )}
           {this.state.advanced ? <WarningFooter /> : <ResearchFooter />}
-        </div>
+        </section>
       </div>
     );
   }

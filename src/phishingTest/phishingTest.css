@@ -67,6 +67,11 @@ li.url {
   font-weight: bolder;
 }
 
+mark {
+  background-color: transparent;
+}
+
+
 /**************/
 /* Url Review */
 /**************/

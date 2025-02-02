@@ -35,9 +35,9 @@ export default function UrlSyntaxHighlight(props) {
 
   return segments.map((segment, index) =>
     segment.match(pattern) ? (
-      <span key={index} className={highlightClassName}>
+      <mark key={index} className={highlightClassName}>
         {target}
-      </span>
+      </mark>
     ) : (
       segment
     ),
