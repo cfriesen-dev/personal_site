@@ -34,7 +34,7 @@ export default class QuestionDisplay extends React.Component {
     shuffle(allDestinations);
 
     return (
-      <div className="banner">
+      <main className="banner">
         <h1 id="question" className="banner-title">
           {this.props.question.url}
         </h1>
@@ -52,7 +52,7 @@ export default class QuestionDisplay extends React.Component {
           width={100}
           progress={(this.props.question.id / this.props.totalQuestions) * 100}
         />
-      </div>
+      </main>
     );
   }
 }
