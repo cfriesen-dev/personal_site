@@ -41,7 +41,7 @@ export default class UrlReview extends React.Component {
       : Constants.CONTRACTED_CLASS;
 
     return (
-      <div id="url-review" className={className}>
+      <section id="url-review" className={className}>
         <p>
           Hover over the structure below to see which sections
           <br /> correspond in the example urls:
@@ -70,7 +70,7 @@ export default class UrlReview extends React.Component {
             </li>
           </ul>
         </div>
-      </div>
+      </section>
     );
   }
 }

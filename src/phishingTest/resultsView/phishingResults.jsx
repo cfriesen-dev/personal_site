@@ -22,10 +22,10 @@ export default class PhishingResults extends React.Component {
     const score = this.props.questionSet.length - this.props.incorrect.length;
 
     return (
-      <div className="container">
+      <main className="container">
         <UrlReview expanded={this.state.urlReviewExpanded} />
         <div className="column-container">
-          <div className="column left-column">
+          <section className="column left-column">
             <div id="score-box">
               {score + "/" + this.props.questionSet.length}
             </div>
@@ -42,16 +42,16 @@ export default class PhishingResults extends React.Component {
             >
               {this.props.advanced ? "Try Again" : "Advanced Questions"}
             </button>
-          </div>
+          </section>
 
-          <div className="column right-column">
+          <section className="column right-column">
             <AnswerList
               questionSet={this.props.questionSet}
               incorrect={this.props.incorrect}
             />
-          </div>
+          </section>
         </div>
-      </div>
+      </main>
     );
   }
 }
