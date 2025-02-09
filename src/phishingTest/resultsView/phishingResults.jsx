@@ -33,6 +33,8 @@ export default class PhishingResults extends React.Component {
             <button
               className="button vertical-buttons"
               onClick={this.toggleUrlReview}
+              aria-expanded={this.state.urlReviewExpanded}
+              aria-controls="url-review"
             >
               Review URL structure
             </button>
