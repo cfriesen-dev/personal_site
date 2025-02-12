@@ -9,120 +9,84 @@
       },
       {
         "id": 1,
-        "url": "https://google.com",
-        "destinations": ["Google's website", "Profile's website"],
-        "answer": "Google's website"
-      },
-      {
-        "id": 2,
         "url": "https://www.google.com",
         "destinations": ["Google's website", "CNN's website"],
         "answer": "Google's website"
       },
       {
-        "id": 3,
+        "id": 2,
         "url": "https://facebook.profile.com",
         "destinations": ["Profile's website", "Facebook's website"],
         "answer": "Profile's website"
       },
       {
-        "id": 4,
+        "id": 3,
         "url": "https://mobile.twitter.com",
         "destinations": ["Twitter's website", "Mobile's website"],
         "answer": "Twitter's website"
       },
       {
-        "id": 5,
+        "id": 4,
         "url": "https://profile.travbuddy.com",
         "destinations": ["TravBuddy's website", "Profile's website"],
         "answer": "TravBuddy's website"
       },
       {
-        "id": 6,
-        "url": "https://weheartit.mobile.com",
-        "destinations": ["Mobile's website", "We Heart It's website"],
-        "answer": "Mobile's website"
-      },
-      {
-        "id": 7,
+        "id": 5,
         "url": "https://bbc.profile.com",
         "destinations": ["Profile's website", "BBC's website"],
         "answer": "Profile's website"
       },
       {
-        "id": 8,
-        "url": "https://mobile.cnn.com",
-        "destinations": ["CNN's website", "Mobile's website"],
-        "answer": "CNN's website"
-      },
-      {
-        "id": 9,
-        "url": "https://profile.dunfermlinepress.com",
-        "destinations": ["Dumfermline Press's website", "Profile's website"],
-        "answer": "Dumfermline Press's website"
-      },
-      {
-        "id": 10,
+        "id": 6,
         "url": "https://haysfreepress.mobile.com",
         "destinations": ["Mobile's website", "Hays Free Press's website"],
         "answer": "Mobile's website"
       },
       {
-        "id": 11,
-        "url": "https://paypal.profile.com",
-        "destinations": ["Profile's website", "Paypal's website"],
-        "answer": "Profile's website"
-      },
-      {
-        "id": 12,
+        "id": 7,
         "url": "https://mobile.westernunion.com",
         "destinations": ["Western Union's website", "Mobile's website"],
         "answer": "Western Union's website"
       },
       {
-        "id": 13,
+        "id": 8,
         "url": "https://revolut.mobile.com",
         "destinations": ["Mobile's website", "Revolut's website"],
         "answer": "Mobile's website"
       },
       {
-        "id": 14,
-        "url": "https://bit.ly/1bdDlXc",
-        "destinations": ["Paypal's website", "CNN's website"],
-        "answer": "Redirects to another website"
-      },
-      {
-        "id": 15,
+        "id": 9,
         "url": "https://goo.gl/fJOIAv",
         "destinations": ["Twitter's website", "Google's website"],
         "answer": "Redirects to another website"
       },
       {
-        "id": 16,
+        "id": 10,
         "url": "https://po.st/If6RgX",
         "destinations": ["Google's website", "Revolut's website"],
         "answer": "Redirects to another website"
       },
       {
-        "id": 17,
+        "id": 11,
         "url": "https://facebook.com@google.com",
         "destinations": ["Google's website", "Facebook's website"],
         "answer": "Google's website"
       },
       {
-        "id": 18,
+        "id": 12,
         "url": "https://twitter.com/facebook.com",
         "destinations": ["Twitter's website", "Facebook's website"],
         "answer": "Twitter's website"
       },
       {
-        "id": 19,
+        "id": 13,
         "url": "https://facebook.com/picture.html?a=twitter.com",
         "destinations": ["Facebook's website", "Twitter's website"],
         "answer": "Facebook's website"
       },
       {
-        "id": 20,
+        "id": 14,
         "url": "https://facebook.com/?url=twitter",
         "destinations": ["Facebook's website", "Twitter's website"],
         "answer": "Facebook's website"
@@ -131,126 +95,90 @@
     [
       {
         "id": 0,
-        "url": "https://microsoft.com",
-        "destinations": ["Microsoft's website", "Hays Free Press's website"],
-        "answer": "Microsoft's website"
-      },
-      {
-        "id": 1,
         "url": "https://google.com",
         "destinations": ["Facebook's website", "Mobile's website"],
         "answer": "A website not listed"
       },
       {
-        "id": 2,
+        "id": 1,
         "url": "https://www.google.com",
         "destinations": ["Google's website", "Western Union's website"],
         "answer": "Google's website"
       },
       {
-        "id": 3,
-        "url": "https://profile.facebook.com",
-        "destinations": ["Facebook's website", "Profile's website"],
-        "answer": "Facebook's website"
-      },
-      {
-        "id": 4,
+        "id": 2,
         "url": "https://twitter.mobile.com",
         "destinations": ["Mobile's website", "Twitter's website"],
         "answer": "Mobile's website"
       },
       {
-        "id": 5,
+        "id": 3,
         "url": "https://travbuddy.profile.com",
         "destinations": ["Profile's website", "TravBuddy's website"],
         "answer": "Profile's website"
       },
       {
-        "id": 6,
+        "id": 4,
         "url": "https://mobile.weheartit.com",
         "destinations": ["We Heart It's website", "Mobile's website"],
         "answer": "We Heart It's website"
       },
       {
-        "id": 7,
+        "id": 5,
         "url": "https://profile.bbc.com",
         "destinations": ["BBC's website", "Profile's website"],
         "answer": "BBC's website"
       },
       {
-        "id": 8,
+        "id": 6,
         "url": "https://cnn.mobile.com",
         "destinations": ["Mobile's website", "CNN's website"],
         "answer": "Mobile's website"
       },
       {
-        "id": 9,
-        "url": "https://dunfermlinepress.profile.com",
-        "destinations": ["Profile's website", "Dumferline Press's website"],
-        "answer": "Profile's website"
-      },
-      {
-        "id": 10,
-        "url": "https://mobile.haysfreepress.com",
-        "destinations": ["Hays Free Press's website", "Mobile's website"],
-        "answer": "Hays Free Press's website"
-      },
-      {
-        "id": 11,
+        "id": 7,
         "url": "https://profile.paypal.com",
         "destinations": ["Paypal's website", "Profile's website"],
         "answer": "Paypal's website"
       },
       {
-        "id": 12,
-        "url": "https://westernunion.mobile.com",
-        "destinations": ["Mobile's website", "Western Union's website"],
-        "answer": "Mobile's website"
-      },
-      {
-        "id": 13,
+        "id": 8,
         "url": "https://mobile.revolut.com",
         "destinations": ["Revolut's website", "Mobile's website"],
         "answer": "Revolut's website"
       },
       {
-        "id": 14,
+        "id": 9,
         "url": "https://bit.ly/1bdDlXc",
         "destinations": ["Paypal's website", "CNN's website"],
         "answer": "Redirects to another website"
       },
       {
-        "id": 15,
+        "id": 10,
         "url": "https://goo.gl/fJOIAv",
         "destinations": ["Twitter's website", "Google's website"],
         "answer": "Redirects to another website"
       },
       {
-        "id": 16,
-        "url": "https://u.to/SbwC",
-        "destinations": ["Facebook's website", "TravBuddy's website"],
-        "answer": "Redirects to another website"
-      },
-      {
-        "id": 17,
+        "id": 11,
         "url": "https://facebook.com@google.com",
         "destinations": ["Google's website", "Facebook's website"],
         "answer": "Google's website"
       },
       {
-        "id": 18,
+        "id": 12,
         "url": "https://twitter.com/facebook.com",
         "destinations": ["Twitter's website", "Facebook's website"],
         "answer": "Twitter's website"
       },
       {
-        "id": 19,
+        "id": 13,
         "url": "https://facebook.com/picture.html?a=twitter.com",
         "destinations": ["Facebook's website", "Twitter's website"],
         "answer": "Facebook's website"
       },
       {
-        "id": 20,
+        "id": 14,
         "url": "https://facebook.com/?url=twitter",
         "destinations": ["Facebook's website", "Twitter's website"],
         "answer": "Facebook's website"
