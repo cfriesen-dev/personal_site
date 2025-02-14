@@ -1,6 +1,6 @@
 This is a personal landing page for showcasing projects that I've worked on as well as to re-familiarise myself with javascript and the React framework. It has been bootstrapped with the [Create React App](https://github.com/facebook/create-react-app).
 
-I am currently in the process of making it more mobile friendly and applying responsive web design. My work experience has been centered around backend systems so this remains an ongoing learning opportunity.
+I am currently in the process of making it more mobile friendly, accessible, and applying responsive web design. My work experience has been centered around backend systems so this remains an ongoing learning opportunity.
 
 ## To run from source
 
