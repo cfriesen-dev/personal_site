@@ -74,11 +74,12 @@ class Topic extends React.Component {
           <div className="column-container">
             <section id="topic-buttons" className="column left-column">
               {data.documentName && this.openDocument()}
-              {data.linkAddress && (
-                <Link to={data.linkAddress} className="button vertical-buttons">
-                  {data.linkName}
-                </Link>
-              )}
+              {data.links &&
+                data.links.map((link) => (
+                  <Link to={link.address} className="button vertical-buttons">
+                    {link.name}
+                  </Link>
+                ))}
             </section>
             <section id="topic-description" className="column right-column">
               <p>{parse(data.description)}</p>
