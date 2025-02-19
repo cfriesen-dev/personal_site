@@ -8,7 +8,7 @@
     },
     {
       "name": "Phishing",
-      "links": [{ "name": "Try the Phishing Test", "address": "/phishingTest" }],
+      "links": [{ "name": "Try the Phishing Test", "address": "/phishingTest" }, { "name": "Skip to advanced level", "address": "/phishingTest?advanced=true" }],
       "description": "<p>Phishing is the attempt to gain sensitive information by fraudulently misrepresenting a trusted party in digital communications and is the most common form of cyber attack.</p><p>Research by <a href='https://groups.inf.ed.ac.uk/tulips/papers/albakry2020.pdf'>Albakry, Vaniea, and Wolters</a> at the University of Edinburgh tested the ability for the average user to be able to detect phishing links when viewing URLs.</p><p>Using their original questions as well as creating a secondary advanced set I built my own test to check my friends' and family's abilities. Feel free to try it out here and see how well you can defend yourself!</p>"
     },
     {

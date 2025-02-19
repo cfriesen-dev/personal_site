@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { createHashRouter } from "react-router";
+import { createHashRouter, useSearchParams } from "react-router";
 import { RouterProvider } from "react-router/dom";
 import ErrorPage from "./error-page";
 import LandingPage from "./landingPage/landingPage";
 import PhishingTest from "./phishingTest/phishingTest";
 import Topic from "./topic/topic";
+
+const PhishingTestWrapper = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  console.log(searchParams.get("advanced"));
+  return <PhishingTest advanced={searchParams.get("advanced")} />;
+};
 
 const router = createHashRouter([
   {
@@ -20,7 +26,7 @@ const router = createHashRouter([
   },
   {
     path: "/phishingTest",
-    element: <PhishingTest advanced={false} />,
+    element: <PhishingTestWrapper />,
     errorElement: <ErrorPage />,
   },
   {
