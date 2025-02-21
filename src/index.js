@@ -8,7 +8,7 @@ import PhishingTest from "./phishingTest/phishingTest";
 import Topic from "./topic/topic";
 
 const PhishingTestWrapper = () => {
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   console.log(searchParams.get("advanced"));
   return <PhishingTest advanced={searchParams.get("advanced")} />;
 };
