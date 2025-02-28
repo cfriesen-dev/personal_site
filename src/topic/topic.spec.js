@@ -19,3 +19,9 @@ it("renders the appropriate topic content", () => {
     screen.getByText(/Phishing is the attempt to gain sensitive information/i),
   ).toBeInTheDocument();
 });
+
+it("renders multiple buttons in list", () => {
+  render(<Topic topic={"Phishing"} />, { wrapper: HashRouter });
+  expect(screen.getByText(/Try the Phishing Test/i)).toBeInTheDocument();
+  expect(screen.getByText(/Skip to advanced level/i)).toBeInTheDocument();
+});
