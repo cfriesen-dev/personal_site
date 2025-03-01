@@ -25,3 +25,8 @@ it("renders multiple buttons in list", () => {
   expect(screen.getByText(/Try the Phishing Test/i)).toBeInTheDocument();
   expect(screen.getByText(/Skip to advanced level/i)).toBeInTheDocument();
 });
+
+it("renders link to document if present", () => {
+  render(<Topic topic={"Fingerprinting"} />, { wrapper: HashRouter });
+  expect(screen.getByText(/Literature Review/i)).toBeInTheDocument();
+});
