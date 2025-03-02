@@ -1,0 +1,27 @@
+{
+    "standard": [
+        {
+            "category": "Category Placeholder",
+            "description": "Description Placeholder",
+            "actions": [
+                {
+                    "title": "Action 1 Title",
+                    "condition": "Action 1 Condition",
+                    "steps": [
+                        "step 1",
+                        "step 2"
+                    ]
+
+                },
+                {
+                    "title": "Action 2 Title",
+                    "condition": "Action 2 Title",
+                    "steps": [
+                        "step 1",
+                        "step 2"
+                    ]
+                }
+            ]
+        }
+    ]
+}
