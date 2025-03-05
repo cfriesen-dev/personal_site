@@ -1,0 +1,17 @@
+/********************/
+/* Action List */
+/********************/
+
+header {
+    color: #77bfa3;
+}
+
+#action-steps {
+  list-style: none;
+  padding: 0;
+  margin-top: 5px;
+}
+
+input {
+    float: left;
+}

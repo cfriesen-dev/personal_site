@@ -3,21 +3,21 @@ import PropTypes from "prop-types";
 
 export default function ActionList(props) {
   return (
-    <ol classname="action_list">
+    <ol id="action_list">
       {props.check_list.map((area) => (
-        <li className="area" key={area.category}>
+        <li id="area" key={area.category}>
           {area.category}
           <p>{area.description}</p>
-          <h4>Actions:</h4>
+          <header>Actions:</header>
           <ol>
             {area.actions.map((action) => (
-              <li classname="action" key={action.title}>
+              <li id="action" key={action.title}>
                 {action.title}
                 <p>{action.condition}</p>
-                <h4>Steps:</h4>
-                <ol>
+                <header>Steps:</header>
+                <ol id="action-steps">
                   {action.steps.map((step, index) => (
-                    <li classname="action-steps">
+                    <li>
                       <input
                         type="checkbox"
                         id={`${step}-${index}`}

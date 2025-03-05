@@ -178,7 +178,13 @@ ul ol,
 ol ol,
 ol ul {
   margin: 1.5rem 0 1.5rem 3rem;
-  font-size: 90%;
+}
+
+ul p,
+ol p,
+ul header,
+ol header {
+  margin: 0.75rem 0 1.5rem 1.2rem;
 }
 
 li {

@@ -1,6 +1,7 @@
 import React from "react";
 import ActionList from "./actionList";
 import NavMenu from "../nav/nav.jsx";
+import "./privacyChecklist.css";
 
 const CHECKLIST_DATA = require("./checklist.json");
 
