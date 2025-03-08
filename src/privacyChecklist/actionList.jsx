@@ -1,35 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import ActionsDisplay from "./actionsDisplay";
 
 export default function ActionList(props) {
   return (
     <ol id="action_list">
-      {props.check_list.map((area) => (
-        <li id="area" key={area.category}>
-          {area.category}
-          <p>{area.description}</p>
-          <header>Actions:</header>
-          <ol>
-            {area.actions.map((action) => (
-              <li id="action" key={action.title}>
-                {action.title}
-                <p>{action.condition}</p>
-                <header>Steps:</header>
-                <ol id="action-steps">
-                  {action.steps.map((step, index) => (
-                    <li>
-                      <input
-                        type="checkbox"
-                        id={`${step}-${index}`}
-                        name={step}
-                      />
-                      <label for={`${step}-${index}`}>{step}</label>
-                    </li>
-                  ))}
-                </ol>
-              </li>
-            ))}
-          </ol>
+      {props.check_list.map((section) => (
+        <li id="section" key={section.category}>
+          {section.category}
+          <ActionsDisplay section={section} />
         </li>
       ))}
     </ol>
