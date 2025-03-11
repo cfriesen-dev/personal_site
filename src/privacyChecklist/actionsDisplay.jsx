@@ -15,8 +15,14 @@ export default function ActionsDisplay(props) {
             <ol id="action-steps">
               {action.steps.map((step, index) => (
                 <li>
-                  <input type="checkbox" id={`${step}-${index}`} name={step} />
-                  <label for={`${step}-${index}`}>{step}</label>
+                  <label>
+                    <input
+                      type="checkbox"
+                      id={`${step}-${index}`}
+                      name={step}
+                    />
+                    {step}
+                  </label>
                 </li>
               ))}
             </ol>
