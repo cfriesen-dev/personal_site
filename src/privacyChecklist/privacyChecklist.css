@@ -2,40 +2,20 @@
 /* Action List */
 /********************/
 
-header {
-    color: #77bfa3;
+#category {
+  color: #54af8c;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#actions header {
+    color: #54af8c;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 #action-steps {
   list-style: none;
   padding: 0;
   margin-top: 5px;
-}
-
-
-input[type="checkbox"] {
-  float: left;
-  margin-right: 5px;
-  appearance: none;
-  background-color: #fff;
-  width: 1.15em;
-  height: 1.15em;
-  border: 0.11em solid currentColor;
-  border-radius: 0.15em;
-  transform: translateY(-0.075em);
-  display: grid;
-  place-content: center;
-}
-
-input[type="checkbox"]::before {
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #77bfa3;
-}
-
-input[type="checkbox"]:checked::before {
-  transform: scale(1);
 }

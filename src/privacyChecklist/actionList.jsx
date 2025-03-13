@@ -6,8 +6,8 @@ export default function ActionList(props) {
   return (
     <ol id="action_list">
       {props.check_list.map((section) => (
-        <li id="section" key={section.category}>
-          {section.category}
+        <li key={section.category}>
+          <header id="category">{section.category}</header>
           <ActionsDisplay section={section} />
         </li>
       ))}
@@ -18,7 +18,7 @@ export default function ActionList(props) {
 ActionList.propTypes = {
   check_list: PropTypes.arrayOf(
     PropTypes.shape({
-      category: PropTypes.number.isRequired,
+      category: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       actions: PropTypes.arrayOf(PropTypes.object).isRequired,
     }),

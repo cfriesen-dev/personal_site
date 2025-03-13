@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default function ActionsDisplay(props) {
   return (
-    <div>
+    <div id="actions">
       <p>{props.section.description}</p>
       <header>Actions:</header>
       <ol>
