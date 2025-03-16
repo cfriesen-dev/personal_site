@@ -14,8 +14,44 @@
     text-decoration: underline;
 }
 
+.category-header {
+  margin-bottom: 8px;
+}
+
 #action-steps {
   list-style: none;
   padding: 0;
   margin-top: 5px;
 }
+
+#action_list {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.toggle-button {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  width: 100%;
+  text-align: left;
+  font-size: inherit;
+}
+
+.toggle-button:hover {
+  background-color: #f5f5f5;
+}
+
+.arrow {
+  display: inline-block;
+  margin-right: 8px;
+  transition: transform 0.2s;
+}
+
+/* #category {
+  display: inline;
+  margin-left: 4px;
+} */

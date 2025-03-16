@@ -35,7 +35,7 @@ export default function ActionsDisplay(props) {
 
 ActionsDisplay.propTypes = {
   section: PropTypes.shape({
-    category: PropTypes.number.isRequired,
+    category: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
     actions: PropTypes.arrayOf(PropTypes.object).isRequired,
   }).isRequired,
