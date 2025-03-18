@@ -14,7 +14,7 @@ export default function ActionsDisplay(props) {
             <header>Steps:</header>
             <ol id="action-steps">
               {action.steps.map((step, index) => (
-                <li>
+                <li key={step}>
                   <label>
                     <input
                       type="checkbox"
