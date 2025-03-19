@@ -47,6 +47,18 @@
 
 .arrow {
   display: inline-block;
+  width: 0;
+  height: 0;
   margin-right: 8px;
-  transition: transform 0.2s;
+  border-style: solid;
+}
+
+.arrow.collapsed {
+  border-width: 5px 0 5px 8px;
+  border-color: transparent transparent transparent #333;
+}
+
+.arrow.expanded {
+  border-width: 8px 5px 0 5px;
+  border-color: #333 transparent transparent transparent;
 }

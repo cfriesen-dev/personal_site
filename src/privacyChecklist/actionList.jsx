@@ -25,9 +25,7 @@ export default function ActionList(props) {
             >
               <span
                 className={`arrow ${expandedSections[section.category] ? "expanded" : "collapsed"}`}
-              >
-                {expandedSections[section.category] ? "▼" : "►"}
-              </span>
+              ></span>
               <header id="category">{section.category}</header>
             </button>
           </div>
