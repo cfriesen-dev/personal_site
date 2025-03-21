@@ -16,9 +16,9 @@ export default function ActionList(props) {
     <ol id="action_list">
       {props.check_list.map((section) => (
         <li key={section.category}>
-          <div className="category-header">
-            <button
-              className="toggle-button"
+          <div className="header">
+            <header
+              className="toggle-list"
               onClick={() => toggleSection(section.category)}
               aria-expanded={expandedSections[section.category]}
               aria-controls={`section-${section.category}`}
@@ -26,8 +26,8 @@ export default function ActionList(props) {
               <span
                 className={`arrow ${expandedSections[section.category] ? "expanded" : "collapsed"}`}
               ></span>
-              <header id="category">{section.category}</header>
-            </button>
+              {section.category}
+            </header>
           </div>
 
           {expandedSections[section.category] && (
